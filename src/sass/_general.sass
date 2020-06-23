@@ -1,0 +1,417 @@
+header
+	position: relative
+
+nav
+	height: 50px
+	background-color: #212121
+	width: 100%
+	position: fixed
+	z-index: 1
+
+.menu
+	display: flex
+	justify-content: space-between
+	padding: 13px 70px
+	margin: 0
+	list-style-type: none
+	&_link
+		font-size: 15px
+		font-weight: 300
+		color: #ffffff
+
+	&_item
+		border-right: 2px dotted black
+		padding-right: 25px
+		&:last-child
+			border-right: none
+			
+
+.subheader
+	margin-top: 50px
+	position: absolute
+	width: 100%
+	height: 84px
+	background-color: rgba(0, 0, 0, 0.6)
+
+	&_logo
+		display: block
+		max-width: 100%
+		margin-top: 16px
+
+	&_official
+		margin-top: 6px
+		font-size: 13px
+		font-weight: 100
+		font-stretch: normal
+		font-style: normal
+		letter-spacing: normal
+		text-align: left
+		color: rgba(255, 255, 255, 0.5)
+
+	&_call
+		margin-top: 19px
+		font-size: 12px
+		font-weight: 300
+		font-stretch: normal
+		font-style: normal
+		letter-spacing: normal
+		text-align: right
+		color: #ffffff
+
+	&_phone
+		display: block
+		margin-top: 8px
+		font-size: 22px
+		font-weight: normal
+		font-stretch: normal
+		font-style: normal
+		letter-spacing: normal
+		line-height: 12px
+		text-align: right
+		color: #ffffff
+
+	&_btn
+		margin-top: 19px
+		width: 172px
+		height: 46px
+		box-shadow: inset 0px -3px 0 0 rgba(0, 0, 0, 0.12)
+		border: none
+		border-radius: 4px
+		background-image: linear-gradient(to top, #1eacc7, #4ce2ff)
+		text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21)
+		font-size: 14px
+		font-weight: normal
+		font-stretch: normal
+		font-style: normal
+		letter-spacing: normal
+		text-align: center
+		text-transform: uppercase
+		color: #ffffff
+		@include btn_hover
+
+.hamburger
+	display: none
+
+.promo
+	min-height: 800px
+	background: url('../img/main.jpg') center (center / cover) no-repeat
+	padding: 150px 0 135px 0
+
+	&_header
+		font-size: 60px
+		font-weight: 700
+		font-stretch: normal
+		font-style: normal
+		letter-spacing: normal
+		text-align: center
+		color: #ffffff
+		line-height: 60px
+		text-transform: uppercase
+		margin-top: 67px
+
+	&_subheader
+		font-size: 35px
+		font-weight: 700
+		font-stretch: normal
+		font-style: normal
+		letter-spacing: normal
+		text-align: center
+		color: #ffffff
+		line-height: 36px
+		text-transform: uppercase
+		margin: 0
+		margin-top: 15px
+
+	&_descr
+		width: 100%
+		margin-top: 23px
+		font-size: 18px
+		font-weight: normal
+		font-stretch: normal
+		font-style: normal
+		line-height: 1.33
+		letter-spacing: normal
+		text-align: center
+		color: #ffffff
+
+	&_btn
+		display: block
+		width: 259px
+		height: 63px
+		box-shadow: inset 0px -4px 0 0 rgba(0, 0, 0, 0.12)
+		border: none
+		border-radius: 4px
+		background-image: linear-gradient(to top, #1eacc7, #4ce2ff)
+		margin: 118px auto 0 auto
+		text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21)
+		font-size: 18px
+		font-weight: normal
+		font-stretch: normal
+		font-style: normal
+		letter-spacing: normal
+		text-align: center
+		color: #ffffff
+		text-transform: uppercase
+		@include btn_hover
+
+.list
+	.container
+		padding: 71px 0 80px 0
+
+	.list_block
+		min-height: 177px
+		display: flex
+		justify-content: center
+		align-items: center
+
+.black 
+	@include black
+
+.main_header
+	@include main_header
+
+.sub_header
+	@include sub_header
+
+.list
+	.circle
+		display: flex
+		width: 113px
+		height: 113px
+		border-radius: 113px
+		background-color: #1eacc7
+		justify-content: center
+		align-items: center
+
+	.text_block
+		margin-left: 26px
+		width: 343px
+		font-size: 17px
+		font-weight: normal
+		color: #1eacc7
+
+		p
+			font-size: 15px
+			font-weight: 300
+			font-stretch: normal
+			font-style: normal
+			line-height: 1.4
+			letter-spacing: normal
+			text-align: justify
+			color: #202020
+
+.mobile
+		min-height: 864px
+		padding: 48px 0 79px 0
+		background: url('../img/gridbg.jpg') center center/cover no-repeat
+		.row
+			margin-top: 32px
+		&_item 
+					position: relative
+					width: 300px
+					height: 280px
+					opacity: 0.9
+					margin: 0 auto
+					margin-bottom: 19px
+					padding-top: 92px
+					&_1
+							background: url('../img/1.png') center center/cover no-repeat
+					&_2
+							background: url('../img/2.png') center center/cover no-repeat
+					&_3
+							background: url('../img/3.png') center center/cover no-repeat
+					&_4
+							background: url('../img/4.png') center center/cover no-repeat
+					&_5
+							background: url('../img/5.png') center center/cover no-repeat
+					&_6
+							background: url('../img/6.png') center center/cover no-repeat
+					&_subtitle
+							font-size: 24px
+							line-height: 1.29
+							letter-spacing: normal
+							text-align: center
+							color: #ffffff
+							text-transform: uppercase
+					&_plus
+						display: flex
+						justify-content: center
+						align-items: center
+						position: absolute
+						bottom: 35px
+						left: 50%
+						transform: translateX(-50%)
+						width: 26px
+						height: 26px
+						border-radius: 100%
+						background-color: #000000
+						margin: 0 auto
+						cursor: pointer
+						&::before
+							content: ''
+							display: block
+							width: 14px
+							height: 2px
+							background-color: $main_color
+							transition: 0.3s all
+						&::after
+							content: ''
+							display: block
+							width: 2px
+							height: 14px
+							background-color: $main_color
+							position: absolute
+							left: 50%
+							transform: translateX(-50%)
+							transition: 0.3s all
+						&:hover
+							&::before, &::after
+								background-color: $second_color
+
+
+
+.white
+	@include black
+	background-color: white
+	color: black
+
+.main_header_white
+	@include main_header
+	margin-top: 0px
+	margin-top: 32px
+	color: white
+
+.sub_header_white
+	@include sub_header
+	margin-top: 0px
+	margin-top: 19px
+	color: white
+
+.car
+	.container_fluid
+		position: relative
+		.up
+			padding-top: 65px 
+			max-width: 100%
+			height: 499px
+			background-color: #070716
+			.car_logo
+				margin-top: 56px
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+		.down
+			padding-bottom: 138px
+			height: 397px
+			background: url('../img/secondgrid.png') center center/cover no-repeat
+			.motivation
+				padding-top: 217px
+				text-align: center
+				font-size: 17px
+				font-weight: 300
+				line-height: 1.41
+				color: #222222
+
+.require
+	padding: 68px 0 61px 0
+	&_block 
+		margin: 33px 0
+		width: 478px
+	&_title
+		font-size: 22px
+		font-weight: normal
+		color: #1ca8c3
+		&_red
+			color: $second_color
+	&_list
+		margin-top: 22px
+		list-style-type: none
+		padding-left: 50px
+		li
+			position: relative
+			font-size: 17px
+			font-weight: 300
+			line-height: 1.41
+			margin-bottom: 10px
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				left: -32px
+				top: 3px
+				width: 21px
+				height: 20px
+				background: url('../ico/pointblue.svg') center center/cover no-repeat
+	&_descr
+		color: #1ca8c3
+	.red
+		.require_title
+			color: $second_color
+		.require_list
+			li
+				&::before
+					background: url('../ico/pointred.svg') center center/cover no-repeat
+
+.end
+	.container_fluid
+		height: 717px
+		background: url('../img/world.jpg') center center/cover no-repeat
+		padding: 49px 0
+		.down_header
+			margin-top: 437px
+			font-size: 15px
+			font-weight: normal
+			line-height: 4.53
+			text-align: center
+			color: #1fbad6
+			text-transform: uppercase
+
+footer
+	position: relative
+	height: 148px
+	padding-top: 14px
+	.divider
+		width: 300px
+		height: 4px
+		background-color: #1fbad6
+		margin: 0 auto
+	.container
+		padding: 24px 0 19px 0
+		ul
+			margin: 8px 0
+			display: flex
+			justify-content: center
+			list-style-type: none
+			li, a
+				.list_up
+					padding-right: 46px
+					font-size: 15px
+					font-weight: 300
+					letter-spacing: normal
+					color: #070716
+					text-transform: uppercase
+				.list_down
+					padding-right: 21px
+					font-size: 11px
+					font-weight: 300
+					letter-spacing: normal
+					color: #999999
+					text-transform: uppercase
+					padding-top: 6px
+		.lang
+			margin-top: 19px
+			font-size: 11px
+			font-weight: normal
+			letter-spacing: normal
+			text-align: center
+			color: #1fbad6
+			text-transform: uppercase
+	.container_logo
+		position: absolute
+		right: 1%
+		top: 34%
+		a
+			margin-right: 3px
+
+.xs-visible
+	dispaly: none

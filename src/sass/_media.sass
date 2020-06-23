@@ -1,0 +1,112 @@
+@media (max-width: 1200px)
+    .menu
+        &_item
+            padding-right: 20px
+        &_link
+            font-size: 13px
+    .promo
+        &_header
+            font-size: 50px
+
+
+@media (max-width: 992px)
+    header
+        .subheader_call
+            font-size: 11px
+        .subheader_phone
+            font-size: 18px
+    footer
+        .container_logo
+            transform: scale(0.8)
+
+@media (max-width: 991px)
+    .menu
+        &_item
+            padding-right: 8px
+        &_link
+            font-size: 10px
+    .subheader
+        &_logo
+            img
+                width: 100%
+        &_official
+            font-size: 11px
+        &_btn
+            margin-top: 21px
+            height: 40px
+            widows: 100%
+    .promo
+        &_header
+            font-size: 40px
+        &_subheader
+            font-size: 26px
+    .list
+        .list_block
+            flex-direction: column
+        .text_block
+            margin-top: 15px
+            min-height: 125px
+        .right_col
+            .text_block
+                min-height: 0px
+                min-height: 184px
+
+
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0, 0, 0, 0.8) 
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border: none
+            margin-top: 10px
+        &_link
+            font-size: 20px
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                   transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .xs-hidden
+        display: none     
+    .xs-visible
+        display: block       
+                
+                    
+
+
+            
+            
+
+
+    

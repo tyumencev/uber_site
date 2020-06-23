@@ -1,0 +1,39 @@
+@mixin black 
+	display: block
+	margin: 0 auto
+	width: 112px
+	height: 24px
+	background-color: #000000
+	font-size: 11px
+	font-weight: 100
+	color: #ffffff
+	padding: 5px 11px
+	text-transform: uppercase
+	text-align: center  
+
+@mixin main_header
+	margin-top: 38px
+	font-size: 38px
+	font-weight: bold
+	font-stretch: normal
+	font-style: normal
+	letter-spacing: normal
+	text-align: center
+	color: #222222
+	text-transform: uppercase
+
+@mixin sub_header
+	margin-top: 19px
+	font-size: 17px
+	font-weight: normal
+	font-stretch: normal
+	font-style: normal
+	line-height: 1.24
+	letter-spacing: normal
+	text-align: center
+	color: #222222
+	
+@mixin btn_hover
+	&:hover
+		background-image: none
+		background-color: $main_color
